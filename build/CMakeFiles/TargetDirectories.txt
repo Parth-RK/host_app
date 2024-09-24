@@ -1,0 +1,3 @@
+/home/dalab/Desktop/host_app/build/CMakeFiles/HelloQtApp.dir
+/home/dalab/Desktop/host_app/build/CMakeFiles/edit_cache.dir
+/home/dalab/Desktop/host_app/build/CMakeFiles/rebuild_cache.dir
