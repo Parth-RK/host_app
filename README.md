@@ -7,6 +7,10 @@ sudo apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 qmake --version
 
 
+# Install CMake and build tools
+sudo apt install -y cmake build-essential
+
+
 ## For Clean Build
 ```bash
 rm -rf build

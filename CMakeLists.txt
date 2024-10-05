@@ -6,6 +6,7 @@ project(HelloQtApp VERSION 1.0)
 # Ensure that CMake is looking for Qt5
 set(CMAKE_PREFIX_PATH "/usr/lib/x86_64-linux-gnu/cmake/Qt5")
 
+
 # Executable's filepath
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
@@ -20,6 +21,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Add the executable
 add_executable(HelloQtApp main.cpp)
+# Set the runtime path to find shared libraries
+set_target_properties(${PROJECT_NAME} PROPERTIES
+    INSTALL_RPATH "$ORIGIN/lib"
+)
 
 # Link the executable with the Qt5 Widgets library
 target_link_libraries(HelloQtApp Qt5::Widgets)
