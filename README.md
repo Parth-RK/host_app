@@ -1,10 +1,15 @@
 # host_app
 sudo apt update
 
+# Install CMake
+sudo apt install cmake build-essential
+
 # Install the Qt development libraries
 sudo apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 
 qmake --version
+
+
 
 
 # Install CMake and build tools
