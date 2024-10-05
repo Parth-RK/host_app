@@ -2,9 +2,9 @@
 ```bash
 sudo apt update
 ```
-# Install CMake
+# Install CMake and build tools
 ```bash
-sudo apt install cmake build-essential
+sudo apt install -y cmake build-essential
 ```
 # Install the Qt development libraries
 ```bash
@@ -12,14 +12,6 @@ sudo apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
 
 qmake --version
 ```
-
-
-
-# Install CMake and build tools
-```bash
-sudo apt install -y cmake build-essential
-```
-
 ## For Clean Build
 ```bash
 rm -rf build
