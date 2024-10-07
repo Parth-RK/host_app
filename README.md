@@ -18,11 +18,11 @@ rm -rf build
 
 mkdir build
 cd build
-cmake ..
 
 make
 ```
 # Not working, ensure permissions
+cmake ..
 ```bash
 chmod -R 755 build
 
@@ -57,4 +57,13 @@ chmod +x linuxdeployqt-continuous-x86_64.AppImage
 # run on binary
 ```bash
 ./linuxdeployqt-continuous-x86_64.AppImage ./HelloQtApp -appimage
+```
+# compiling static Qt libraries
+```bash
+git clone https://github.com/qt/qtbase.git
+cd qtbase
+./configure -static -release -prefix /path/to/install
+
+make
+make install
 ```

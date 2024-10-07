@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
     QMainWindow window;
     window.setWindowTitle("Hello Qt Application");
     window.setStyleSheet("background-color: white;");
-
+    w.resize(500, 500)
     // Create central widget
     QWidget *centralWidget = new QWidget;
     window.setCentralWidget(centralWidget);
